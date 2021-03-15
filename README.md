@@ -1,1 +1,1 @@
-"# hortonomi" 
+Hortonomi-mobiilisovelluksen readme-tiedosto
