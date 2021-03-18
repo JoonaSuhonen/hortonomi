@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Third">
+
+    <TextView
+        android:id="@+id/textViewKasvinNimi"
+        android:layout_width="150dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="22dp"
+        android:text="Kasvin nimi"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewKasvinLaji"
+        android:layout_width="150dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:text="Kasvin laji"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKasvinNimi" />
+
+    <TextView
+        android:id="@+id/textViewHoito"
+        android:layout_width="150dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:text="Hoito-ohjeet"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewKasvinKuva" />
+
+    <TextView
+        android:id="@+id/textViewHoito2"
+        android:layout_width="150dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="9dp"
+        android:text="Käyttäjien kommentit"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLineKommenttiTextKentta"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonKoti"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Koti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewKasvinKuva"
+        android:layout_width="169dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKasvinLaji"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLineHoitoTextKentta"
+        android:layout_width="346dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHoito" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLineKommenttiTextKentta"
+        android:layout_width="346dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/buttonKirjoita"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMuokkaa"
+        android:layout_width="117dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="MUOKKAA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLineHoitoTextKentta" />
+
+    <Button
+        android:id="@+id/buttonKirjoita"
+        android:layout_width="117dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="118dp"
+        android:text="KIRJOITA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewKasvinKuva2"
+        android:layout_width="79dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewKasvinKuva"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageViewKasvinKuva3"
+        android:layout_width="79dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewKasvinKuva2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonKoti"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageViewKasvinKuva4"
+        android:layout_width="79dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewKasvinKuva5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewKasvinKuva"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewKasvinKuva2"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageViewKasvinKuva5"
+        android:layout_width="79dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewKasvinKuva4"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewKasvinKuva3"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/imageButtonTakaisin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
