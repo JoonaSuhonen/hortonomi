@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KommentinLuonti">
+
+    <Button
+        android:id="@+id/buttonKotiKommentti"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#1C6C09"
+        android:text="@string/koti" />
+
+    <TextView
+        android:id="@+id/textViewKirjoitaKommentti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/kirjoita_kommentti"
+        android:textColor="#1C6C09"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLineKommentinKirjoitus"
+        android:layout_width="282dp"
+        android:layout_height="158dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/t_h_n_kirjoita_jotaki"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/buttonJulkaiseKommentti"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#1C6C09"
+        android:text="@string/julkaise"
+        tools:ignore="UnknownId" />
+
+    <ImageButton
+        android:id="@+id/imageButtonTakaisinKommentti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="353dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#1C6C09"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+</LinearLayout>

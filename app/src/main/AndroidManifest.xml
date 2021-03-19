@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hortonomi">
-        <activity android:name=".Third"></activity>
+        <activity android:name=".KommentinLuonti"></activity>
+        <activity android:name=".Third" />
         <activity android:name=".Second" />
         <activity android:name=".MainActivity">
             <intent-filter>

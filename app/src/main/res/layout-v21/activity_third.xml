@@ -14,8 +14,7 @@
         android:backgroundTint="#1C6C09"
         android:text="@string/kotiA3"
         tools:layout_editor_absoluteX="321dp"
-        tools:layout_editor_absoluteY="7dp"
-        tools:targetApi="lollipop" />
+        tools:layout_editor_absoluteY="7dp" />
 
     <TextView
         android:id="@+id/textViewKasvinNimiA3"
@@ -47,22 +46,23 @@
         tools:layout_editor_absoluteY="286dp" />
 
     <TextView
-        android:id="@+id/textViewHoitoOhjeetA3"
+        android:id="@+id/textViewHoitoOhjeet3A"
         android:layout_width="379dp"
         android:layout_height="117dp"
-        android:hint="Tässä lukee hoito-ohjeita"
+        android:hint=""
+        tools:ignore="DuplicateIds"
         tools:layout_editor_absoluteX="15dp"
         tools:layout_editor_absoluteY="307dp" />
 
     <ImageButton
-        android:id="@+id/imageButtonMuokkaaA3"
+        android:id="@+id/imageButtonMuokkaa3A"
         android:layout_width="30dp"
         android:layout_height="32dp"
         android:backgroundTint="#1C6C09"
         app:srcCompat="@android:drawable/ic_menu_edit"
         tools:layout_editor_absoluteX="365dp"
         tools:layout_editor_absoluteY="424dp"
-        tools:targetApi="lollipop" />
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textViewKommenttiA3"
@@ -79,7 +79,7 @@
         android:layout_width="380dp"
         android:layout_height="101dp"
         android:text=""
-        android:hint="Tähän tulee käyttäjien kommentit"
+        tools:ignore="DuplicateIds"
         tools:layout_editor_absoluteX="15dp"
         tools:layout_editor_absoluteY="519dp" />
 
@@ -91,7 +91,7 @@
         app:srcCompat="@android:drawable/ic_menu_edit"
         tools:layout_editor_absoluteX="364dp"
         tools:layout_editor_absoluteY="620dp"
-        tools:targetApi="lollipop" />
+        android:contentDescription="@string/todo" />
 
     <ImageButton
         android:id="@+id/imageButtonTakaisinA3"
@@ -101,5 +101,5 @@
         app:srcCompat="@drawable/abc_vector_test"
         tools:layout_editor_absoluteX="5dp"
         tools:layout_editor_absoluteY="683dp"
-        tools:targetApi="lollipop" />
+        android:contentDescription="@string/todo" />
 </LinearLayout>

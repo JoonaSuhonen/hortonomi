@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">hortonomi</string>
+    <string name="hortonomi">Hortonomi</string>
+    <string name="loginMain">LOGIN</string>
+    <string name="Nappi3ACT">3ACT</string>
+    <string name="textviewA2">textviewA2</string>
+    <string name="kasvin_nimiA3">Kasvin nimi</string>
+    <string name="kasvin_lajiA3">Kasvin laji</string>
+    <string name="hoito_ohjeetTextA3">Hoito-ohjeet</string>
+    <string name="k_ytt_jien_kommentitA3">Käyttäjien kommentit</string>
+    <string name="kotiA3">KOTI</string>
+    <string name="kotiKommenttiA4">KOTI</string>
+    <string name="kirjoita_kommenttiA4">Kirjoita kommentti</string>
+    <string name="julkaiseKommenttiA4">JULKAISE</string>
+    <string name="t_h_n_voit_kirjoittaa_kommentinA4">Tähän voit kirjoittaa kommentin</string>
+    <string name="todo">TODO</string>
+    <string name="koti">KOTI</string>
+    <string name="kirjoita_kommentti">Kirjoita kommentti</string>
+    <string name="julkaise">JULKAISE</string>
+    <string name="t_h_n_kirjoita_jotaki">Tähän kirjoita jotaki</string>
 </resources>
