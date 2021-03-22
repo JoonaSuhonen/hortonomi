@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">hortonomi</string>
     <string name="hortonomi">Hortonomi</string>
-    <string name="loginMain">LOGIN</string>
+    <string name="loginMain">KIRJAUDU</string>
     <string name="Nappi3ACT">3ACT</string>
     <string name="textviewA2">textviewA2</string>
     <string name="kasvin_nimiA3">Kasvin nimi</string>
