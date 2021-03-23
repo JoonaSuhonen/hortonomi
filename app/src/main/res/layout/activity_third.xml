@@ -9,97 +9,126 @@
 
     <Button
         android:id="@+id/buttonKotiA3"
-        android:layout_width="74dp"
-        android:layout_height="40dp"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="end"
         android:backgroundTint="#1C6C09"
         android:text="@string/kotiA3"
-        tools:layout_editor_absoluteX="321dp"
-        tools:layout_editor_absoluteY="7dp"
         tools:targetApi="lollipop" />
 
     <TextView
         android:id="@+id/textViewKasvinNimiA3"
-        android:layout_width="172dp"
-        android:layout_height="24dp"
-        android:text="@string/kasvin_nimiA3"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="start"
         android:textColor="#1C6C09"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="78dp" />
+        android:text="@string/kasvin_nimiA3" />
 
     <TextView
         android:id="@+id/textViewKasvinLajiA3"
-        android:layout_width="169dp"
-        android:layout_height="21dp"
-        android:text="@string/kasvin_lajiA3"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="start"
         android:textColor="#1C6C09"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="102dp" />
+        android:textStyle="italic"
+        android:text="@string/kasvin_lajiA3" />
 
     <TextView
         android:id="@+id/textViewHoitoA3"
-        android:layout_width="88dp"
-        android:layout_height="21dp"
-        android:text="@string/hoito_ohjeetTextA3"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="start"
         android:textColor="#1C6C09"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="286dp" />
+        android:text="@string/hoito_ohjeetTextA3" />
 
     <TextView
         android:id="@+id/textViewHoitoOhjeetA3"
-        android:layout_width="379dp"
-        android:layout_height="117dp"
-        android:hint="Tässä lukee hoito-ohjeita"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="307dp" />
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:hint="@string/t_ss_lukee_hoito_ohjeita"
+        android:textStyle="italic" />
 
     <ImageButton
         android:id="@+id/imageButtonMuokkaaA3"
-        android:layout_width="30dp"
-        android:layout_height="32dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="end"
         android:backgroundTint="#1C6C09"
+        android:background="#1C6C09"
         app:srcCompat="@android:drawable/ic_menu_edit"
-        tools:layout_editor_absoluteX="365dp"
-        tools:layout_editor_absoluteY="424dp"
         tools:targetApi="lollipop" />
 
     <TextView
         android:id="@+id/textViewKommenttiA3"
-        android:layout_width="149dp"
-        android:layout_height="25dp"
-        android:text="@string/k_ytt_jien_kommentitA3"
+        android:layout_width="170dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="start"
         android:textColor="#1C6C09"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="484dp" />
+        android:text="@string/k_ytt_jien_kommentitA3" />
 
     <TextView
         android:id="@+id/textViewKommenttiPalstaA3"
-        android:layout_width="380dp"
-        android:layout_height="101dp"
-        android:text=""
-        android:hint="Tähän tulee käyttäjien kommentit"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="519dp" />
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:hint="@string/t_h_n_tulee_k_ytt_jien_kommentit" />
 
     <ImageButton
         android:id="@+id/imageButtonKirjoitaKommenttiA3"
-        android:layout_width="30dp"
-        android:layout_height="32dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="end"
+        android:background="#1C6C09"
         android:backgroundTint="#1C6C09"
         app:srcCompat="@android:drawable/ic_menu_edit"
-        tools:layout_editor_absoluteX="364dp"
-        tools:layout_editor_absoluteY="620dp"
         tools:targetApi="lollipop" />
 
     <ImageButton
         android:id="@+id/imageButtonTakaisinA3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="start"
         android:backgroundTint="#1C6C09"
+        android:background="#1C6C09"
         app:srcCompat="@drawable/abc_vector_test"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="683dp"
         tools:targetApi="lollipop" />
 </LinearLayout>

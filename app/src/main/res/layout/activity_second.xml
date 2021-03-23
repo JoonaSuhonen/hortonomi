@@ -9,25 +9,17 @@
 
     <TextView
         android:id="@+id/textViewA2"
-        android:layout_width="174dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="93dp"
-        android:layout_marginLeft="93dp"
-        android:layout_marginTop="73dp"
-        android:layout_marginEnd="260dp"
-        android:layout_marginRight="260dp"
-        android:layout_marginBottom="39dp"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
         android:text="@string/textviewA2" />
 
     <Button
         android:id="@+id/buttonTesti3Activityyn"
-        android:layout_width="184dp"
-        android:layout_height="122dp"
-        android:layout_marginStart="95dp"
-        android:layout_marginLeft="95dp"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="228dp"
-        android:layout_marginRight="228dp"
-        android:layout_marginBottom="552dp"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
         android:text="@string/Nappi3ACT" />
 </LinearLayout>
