@@ -7,12 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
 public class Third extends AppCompatActivity
 {
-    TextView receiver_msg;
-
     @Override
 
     protected void onCreate(Bundle savedInstanceState)
@@ -20,19 +17,12 @@ public class Third extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
 
-        ImageButton imageButtonTakaisin3A = findViewById(R.id.imageButtonTakaisinA3);
-        Button buttonKoti3A = findViewById(R.id.buttonKotiA3);
-        ImageButton imageButtonKirjoitaKommentti3A = findViewById(R.id.imageButtonKirjoitaKommenttiA3);
+        ImageButton imageButtonTakaisinA3 = findViewById(R.id.imageButtonTakaisinA3);
+        Button buttonKotiA3 = findViewById(R.id.buttonKotiA3);
+        Button buttonFoorumiA3 = findViewById(R.id.buttonFoorumiA3);
 
 
-        //setContentView(R.layout.activity_third);
-        receiver_msg = (TextView) findViewById(R.id.textViewKommenttiPalstaA3);
-        Intent intent = getIntent();
-        String str = intent.getStringExtra("message_key");
-        receiver_msg.setText(str);
-
-
-        imageButtonTakaisin3A.setOnClickListener(new View.OnClickListener()
+        imageButtonTakaisinA3.setOnClickListener(new View.OnClickListener()
         {
             @Override
 
@@ -46,7 +36,7 @@ public class Third extends AppCompatActivity
         });
 
 
-        buttonKoti3A.setOnClickListener(new View.OnClickListener()
+        buttonKotiA3.setOnClickListener(new View.OnClickListener()
         {
             @Override
 
@@ -60,13 +50,13 @@ public class Third extends AppCompatActivity
         });
 
 
-        imageButtonKirjoitaKommentti3A.setOnClickListener(new View.OnClickListener()
+        buttonFoorumiA3.setOnClickListener(new View.OnClickListener()
         {
             @Override
 
             public void onClick(View view)
             {
-                System.out.println("Kirjoita kommentti painiketta painettu 3Activityssa");
+                System.out.println("Kirjoita kommentti painiketta painettu Activity3");
 
                 Intent KommentinLuontiIntent = new Intent(getApplicationContext(), KommentinLuonti.class);
                 startActivity(KommentinLuontiIntent);

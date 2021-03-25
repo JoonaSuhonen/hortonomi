@@ -4,63 +4,86 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
-public class KommentinLuonti extends AppCompatActivity {
+public class KommentinLuonti extends AppCompatActivity
+{
+    TextView receiver_msg;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kommentin_luonti);
 
-        Button buttonKotiKommentti = findViewById(R.id.buttonKotiKommentti);
-        ImageButton imageButtonTakaisinKommentti = findViewById(R.id.imageButtonTakaisinKommentti);
-        Button buttonJulkaiseKommentti = findViewById(R.id.buttonJulkaiseKommentti);
-//        ImageButton imageButtonPoistaKommentti = findViewById(R.id.imageButtonPoistaKommentti);
-        EditText editTextTextMultiLineKommentinKirjoitus = findViewById(R.id.editTextTextMultiLineKommentinKirjoitus);
+        ImageButton imageButtonKirjoitaKommenttiA4 = findViewById(R.id.imageButtonKirjoitaKommenttiA4);
+       /* receiver_msg = (TextView) findViewById(R.id.textViewKommenttiPalstaA4);
+        Intent intent = getIntent();*/
+//        String str = intent.getStringExtra("message_key");
+
+        Button buttonKotiKommenttiA4 = findViewById(R.id.buttonKotiKommenttiA4);
+        ImageButton imageButtonTakaisinKommenttiA4 = findViewById(R.id.imageButtonTakaisinKommenttiA4);
+        Button buttonJulkaiseKommenttiA4 = findViewById(R.id.buttonJulkaiseKommenttiA4);
+
+        EditText editTextTextMultiLineKommentinKirjoitusA4 = findViewById(R.id.editTextTextMultiLineKommentinKirjoitusA4);
+        TextView textViewKommenttiPalstaA4 = findViewById(R.id.textViewKommenttiPalstaA4);
 
 
-        buttonKotiKommentti.setOnClickListener(new View.OnClickListener()
+        buttonKotiKommenttiA4.setOnClickListener(new View.OnClickListener()
         {
             @Override
 
             public void onClick(View view)
             {
-                System.out.println("Painiketta Koti kommenttiActivissa painettu");
+                System.out.println("Painiketta Koti kommenttiActivissa eli A4 painettu");
 
                 Intent MainActivityIntent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(MainActivityIntent);
             }
         });
 
-        imageButtonTakaisinKommentti.setOnClickListener(new View.OnClickListener()
+        imageButtonTakaisinKommenttiA4.setOnClickListener(new View.OnClickListener()
         {
             @Override
 
             public void onClick(View view)
             {
-                System.out.println("Takaisin nuoli painiketta painettu kommenttiosiossa");
+                System.out.println("Takaisin nuoli painiketta painettu kommenttiosiossa eli A4");
 
                 Intent ThirdIntent = new Intent(getApplicationContext(), Third.class);
                 startActivity(ThirdIntent);
             }
         });
 
-        buttonJulkaiseKommentti.setOnClickListener(new View.OnClickListener()
+        imageButtonKirjoitaKommenttiA4.setOnClickListener(new View.OnClickListener()
         {
             @Override
 
             public void onClick(View view)
             {
-                String str = editTextTextMultiLineKommentinKirjoitus.getText().toString();
-                Intent intent = new Intent(getApplicationContext(), Third.class);
+                System.out.println("Kirjoitakommentti painiketta painettu kommenttiosiossa eli A4");
+
+                Intent KommentinLuontiIntent = new Intent(getApplicationContext(), KommentinLuonti.class);
+                startActivity(KommentinLuontiIntent);
+            }
+        });
+
+        buttonJulkaiseKommenttiA4.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+
+            public void onClick(View view)
+            {
+                String str = editTextTextMultiLineKommentinKirjoitusA4.getText().toString();
+                textViewKommenttiPalstaA4.setText(str);
+               /* Intent intent = new Intent(getApplicationContext(), KommentinLuonti.class);
                 intent.putExtra("message_key", str);
-                startActivity(intent);
-                System.out.println("Julkaiset kommentti painiketta painettu kommenttiosiossa");
+                startActivity(intent);*/
+                System.out.println("Julkaiset kommentti painiketta painettu kommenttiosiossa eli A4");
             }
         });
 
