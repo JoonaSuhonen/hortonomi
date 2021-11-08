@@ -1,2 +1,2 @@
 # hortonomi
-Hortonomi on Android Studiolla luotu kasvienhoito-sovellus.
+Hortonomi on Android Studiolla ryhmätyönä tehty kasvienhoito-sovellus.
